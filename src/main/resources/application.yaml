@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    include: social
+
+  datasource:
+    url: jdbc:h2:mem:test
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2.console.enabled: true
+
+logging:
+  level:
+    com.example.demo: DEBUG
+    org.springframework.security: DEBUG
