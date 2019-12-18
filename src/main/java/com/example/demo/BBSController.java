@@ -48,6 +48,11 @@ public class BBSController {
         return "redirect:/";
     }
 
+    @GetMapping("/login")
+    public String showLogin() {
+        return "login";
+    }
+
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
